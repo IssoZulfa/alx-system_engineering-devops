@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "The sum of 128 and the value of the TRUEKNOWLEDGE environment variable is: $((128 + $TRUEKNOWLEDGE))"
+echo $(( 128 + $TRUEKNOWLEDGE ))
