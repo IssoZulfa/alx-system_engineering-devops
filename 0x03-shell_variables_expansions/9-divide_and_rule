@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "The result of POWER divided by DIVIDE is: $((POWER / DIVIDE))"
+echo $(( $POWER / $DIVIDE ))
