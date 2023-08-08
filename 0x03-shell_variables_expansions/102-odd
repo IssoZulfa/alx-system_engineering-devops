@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(cat | nl | awk '{if(NR % 2 == 0) {print $0}}')
+cat | tr '\n' ' ' | cut -d ' ' -f1
