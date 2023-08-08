@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(echo $(echo $WATER | awk '{for (i=0; i<length($0); i++) {printf "%d", ord($0)-ord("a")+1}}') + $(echo $STIR | awk '{for (i=0; i<length($0); i++) {printf "%d", ord($0)-ord("a")+1}}') | awk '{for (i=0; i<length($0); i++) {printf "%c", ord($0)-ord("a")+1}}')
+echo $((5#$(echo $WATER | tr water 01234)+5#$(echo $STIR | tr stir. 01234)) | tr 01234567 behlnort)
