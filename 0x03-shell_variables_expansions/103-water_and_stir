@@ -1,0 +1,2 @@
+#!/bin/bash
+echo $(echo $(echo $WATER | awk '{for (i=0; i<length($0); i++) {printf "%d", ord($0)-ord("a")+1}}') + $(echo $STIR | awk '{for (i=0; i<length($0); i++) {printf "%d", ord($0)-ord("a")+1}}') | awk '{for (i=0; i<length($0); i++) {printf "%c", ord($0)-ord("a")+1}}')
